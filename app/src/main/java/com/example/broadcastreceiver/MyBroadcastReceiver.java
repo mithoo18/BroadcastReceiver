@@ -18,5 +18,8 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
             String data = intent.getStringExtra("data");
             Toast.makeText(context,data,Toast.LENGTH_SHORT).show();
         }
+        if (intent == null){
+            Toast.makeText(context,"null",Toast.LENGTH_SHORT).show();
+        }
     }
 }
